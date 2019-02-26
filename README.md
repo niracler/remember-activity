@@ -22,3 +22,8 @@ python manage.py makemigrations
 
 python manage.py migrate
 ```
+
+## 参考内容
+
+[OperationalError at /admin/ no such table: xadmin_usersettings
+](https://stackoverflow.com/questions/44108753/operationalerror-at-admin-no-such-table-xadmin-usersettings)  
