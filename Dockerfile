@@ -18,9 +18,9 @@ WORKDIR $DOCKER_SRC
 #暴露端口8001，到时候执行docker run 的时候才好把宿主机端口映射到8000
 EXPOSE 8000
 
-RUN  pip3 install --upgrade pip
+RUN  pip3 install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-RUN  pip3 install django  -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN  pip3 install django==2.1.7  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 RUN  pip3 install gunicorn mysqlclient -i https://pypi.tuna.tsinghua.edu.cn/simple
 
@@ -30,4 +30,4 @@ RUN  pip3 install https://codeload.github.com/sshwsfc/xadmin/zip/django2
 COPY requirements.txt ./
 RUN pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-
+COPY add_admin.py ./

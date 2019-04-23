@@ -23,8 +23,6 @@ python manage.py migrate
 
 ## 该项目现存的问题
 
-
-
 ## 参考内容
 
 [OperationalError at /admin/ no such table: xadmin_usersettings
