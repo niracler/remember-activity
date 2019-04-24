@@ -22,7 +22,7 @@ RUN  pip3 install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 RUN  pip3 install django==2.1.7  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-RUN  pip3 install gunicorn mysqlclient -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN  pip3 install gunicorn mysqlclient==1.3.13 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 RUN  pip3 install https://codeload.github.com/sshwsfc/xadmin/zip/django2
 
