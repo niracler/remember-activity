@@ -12,7 +12,7 @@ pip install https://codeload.github.com/sshwsfc/xadmin/zip/django2
 pip install -r requirements.txt
 ```
 
-## 部署
+## 本地测试部署
 
 ```sh
 python manage.py createsuperuser
@@ -20,6 +20,14 @@ python manage.py createsuperuser
 python manage.py makemigrations
 
 python manage.py migrate
+```
+
+## docker部署
+
+```bash
+docker-compose up -d db # 要等两分钟再执行下面的命令
+docker-compose up -d web
+docker-compose up -d nginx
 ```
 
 ## 该项目现存的问题
