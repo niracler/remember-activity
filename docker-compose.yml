@@ -5,8 +5,7 @@ services:
        image: mysql:5
        container_name: remember_db
        environment:
-          MYSQL_DATABASE: dataname
-          MYSQL_ROOT_PASSWORD: 123456
+
        volumes:
           - data:/var/lib/mysql
        restart: always

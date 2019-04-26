@@ -19,12 +19,12 @@ import xadmin
 
 from rememberActivity.settings import MEDIA_ROOT
 from django.views.static import serve
-from images.views import ImagesListViewSet
+from images.views import ImagesViewSet
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register(r'images', ImagesListViewSet, base_name="images")
+router.register(r'images', ImagesViewSet, base_name="images")
 
 urlpatterns = [
     path('admin/', xadmin.site.urls),
